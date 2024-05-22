@@ -1,0 +1,18 @@
+<ul>
+  @for(user of users; track $index){
+      <li>
+          <p>ID пользователя: {{user?.userId}}</p>
+          <p>ID: {{user?.id}}</p>
+          <p>имя пользователя: {{user?.title}}</p>
+      </li>
+}
+</ul> 
+
+<hr>
+
+<ul>
+    <li *ngFor="let album of albums;">
+      <p>ID: {{ album.id }}</p>
+      <p>Title: {{ album.title }}</p>
+    </li>
+  </ul>
